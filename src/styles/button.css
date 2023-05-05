@@ -1,0 +1,15 @@
+.btn{
+    border: none;
+    padding: 1em 0.75em;
+    border-radius: 8px;
+    background-color: var(--primary);
+    color: white;
+    font-weight: 500;
+    font-size: 1rem;
+    margin-top: 1.5rem;
+}
+
+.btn:hover{
+    cursor: pointer;
+    background-color: var(--secondary);
+}
