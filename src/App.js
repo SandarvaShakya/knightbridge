@@ -1,10 +1,10 @@
 import './App.css';
-import Contact from './components/Contact';
-import Gallery from './components/Gallery';
-import Hero from './components/Hero';
-import Information from './components/Information';
-import Navbar from './components/Navbar';
-import Pricing from './components/Pricing';
+import Contact from './sections/Contact';
+import Gallery from './sections/Gallery';
+import Hero from './sections/Hero';
+import Information from './sections/Information';
+import Navbar from './sections/Navbar';
+import Pricing from './sections/Pricing';
 
 const App = () => {
   return (

@@ -1,0 +1,88 @@
+.information-title{
+    display: flex;
+    align-items: center;
+}
+
+.information--icon{
+    width: 30px;
+    margin-right: 1rem;
+}
+
+.information--title{
+    font-size: 1.8rem;
+}
+
+.information--content{
+    padding: 4rem 0;
+}
+
+.information-card{
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 5px 5px 25px var(--secondary);
+    border-left: 5px solid var(--primary);
+}
+
+.information-card + .information-card{
+    margin-top: 2rem;
+}
+
+.information-card--title{
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.information-card--text{
+    margin-left: 1rem;
+}
+
+.information-card--content + .information-card--content{
+    margin-top: 0.35rem;
+}
+
+.information-list{
+    margin-top: 2rem;
+}
+
+.information-list--container{
+    list-style: none;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+}
+
+.information-item{
+    padding: 0.5rem;
+    margin-left: 0.5rem;
+    line-height: 1.5;
+}
+
+.information-item::marker{
+    content: '+';
+}
+
+.information-item-2::marker{
+    content: '*';
+}
+
+@media (min-width: 720px){
+    .information-title{
+        font-size: 2rem;
+    }
+
+    .information--cards{
+        width: 30%;
+    }
+
+    .information--content{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .information-list{
+        margin-top: 0rem;
+        width: 30%;
+    }
+
+}

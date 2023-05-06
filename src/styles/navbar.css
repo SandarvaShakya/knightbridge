@@ -1,3 +1,9 @@
+nav{
+    position: sticky;
+    background: white;
+    top: 0;
+}
+
 .header{
     display: flex;
     justify-content: space-between;
