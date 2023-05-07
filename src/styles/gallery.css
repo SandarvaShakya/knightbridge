@@ -1,0 +1,35 @@
+.gallery-container{
+    margin-top: 2rem;
+}
+
+.gallery-img img{
+    border-radius: 8px;
+    height: 100%;
+}
+
+.gallery-img{
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.gallery-img + .gallery-img{
+    margin-top: 1rem;
+}
+
+.gallery-img img:hover{
+    transform: scale(1.125);
+    transition: all 0.5s ease-in-out;
+}
+
+@media (min-width: 720px){
+    .gallery-container{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 40px;
+        margin-top: 2rem;
+    }
+
+    .gallery-img + .gallery-img{
+        margin-top: 0rem;
+    }
+}

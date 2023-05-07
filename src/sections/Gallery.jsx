@@ -1,8 +1,35 @@
-import React from 'react'
+import '../styles/gallery.css'
+import Heading from '../components/Heading'
 
 const Gallery = () => {
   return (
-    <div>Gallery</div>
+    <section className='gallery'>
+      <div className="container">
+        <Heading
+          title="Photo Gallery"
+          icon="gallery.svg"
+          alt="gallery"
+        />
+        <div className="gallery-container">
+          <div className="gallery-img">
+            <img src="/images/p5.png" alt="house" />
+          </div>
+          <div className="gallery-img">
+            <img src="/images/p4.png" alt="house" />
+          </div>
+          <div className="gallery-img">
+            <img src="/images/p3.png" alt="house" />
+          </div>
+          <div className="gallery-img">
+            <img src="/images/p2.png" alt="house" />
+          </div>
+          <div className="gallery-img">
+            <img src="/images/p1.png" alt="house" />
+          </div>
+        </div>
+      </div>
+
+    </section>
   )
 }
 
