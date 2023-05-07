@@ -29,6 +29,20 @@ section{
     display: flex;
 }
 
+.title-container{
+    display: flex;
+    align-items: center;
+}
+
+.icon{
+    width: 50px;
+    margin-right: 1rem;
+}
+
+.title{
+    font-size: 1.8rem;
+}
+
 @media (min-width: 700px){
     .container{
         width: 80%;
@@ -38,5 +52,13 @@ section{
     .flex{
         display: flex;
         align-items: center;
+    }
+
+    .title-container{
+        font-size: 2rem;
+    }
+
+    .icon{
+        width: 30px;
     }
 }

@@ -6,10 +6,25 @@
     color: white;
     font-weight: 500;
     font-size: 1rem;
+}
+
+.btn-mt{
     margin-top: 1.5rem;
 }
 
 .btn:hover{
     cursor: pointer;
     background-color: var(--secondary);
+}
+
+.btn--grey{
+    background-color: var(--secondary);
+}
+
+.btn--grey:hover{
+    background-color: var(--primary);
+}
+
+.btn--active:hover{
+    background-color: var(--primary);
 }

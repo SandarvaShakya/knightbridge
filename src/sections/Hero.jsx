@@ -26,7 +26,7 @@ const Hero = () => {
                     currently in preconstruction at 850 Mornington Street, Stratford.
                     A beautiful place closer to parks, restaurants and many more.
                 </p>
-                <Button text="Look at the features"/>
+                <Button text="Look at the features" className="btn-mt"/>
             </div>
         </div>
     </section>

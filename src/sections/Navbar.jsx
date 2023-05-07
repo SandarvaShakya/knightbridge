@@ -8,7 +8,7 @@ const Navbar = () => {
         <nav>
             <div className="container flex">
                 <div className="header">
-                    <div className="logo"><h2>Knightbridge</h2></div>
+                    <div className="logo"><h2>Knightsbridge</h2></div>
                     <div className="hamburger" onClick={() => setIsOpen(!isOpen)}>
                         <img src="/icons/hamburger.svg" alt="menu" />
                     </div>

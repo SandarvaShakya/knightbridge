@@ -1,17 +1,17 @@
 import '../styles/information.css'
 import InformationCard from '../components/InformationCard'
 import InformationList from '../components/InformationList'
+import Heading from '../components/Heading'
 
 const Information = () => {
   return (
     <section className="information">
         <div className="container">
-            <div className="information-title">
-              <div className="information--icon">
-                <img src="/icons/information.svg" alt="i" />
-              </div>
-              <h2 className="information--title">Information about Knightbridge - Stratford</h2>
-            </div>
+            <Heading 
+              title="Information about Knightbridge - Stratford"
+              icon="information.svg"
+              alt="i"
+            />
             <div className="information--content">
               <div className="information--cards">
                 <InformationCard 
