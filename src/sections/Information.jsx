@@ -5,7 +5,7 @@ import Heading from '../components/Heading'
 
 const Information = () => {
   return (
-    <section className="information">
+    <section className="information" id='features-id'>
         <div className="container">
             <Heading 
               title="Information about Knightbridge - Stratford"

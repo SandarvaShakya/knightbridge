@@ -1,8 +1,18 @@
 import { useState } from 'react'
 import '../styles/navbar.css'
+import { HashLink as Link} from 'react-router-hash-link';
 
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false)
+
+    const handleClickScroll = (event, elementId) => {
+        // event.preventDefault();
+        const element = document.getElementById(elementId);
+        if (element) {
+          // 👇 Will scroll smoothly to the top of the next section
+          element.scrollIntoView({ behavior: 'smooth' });
+        }
+      };
 
     return (
         <nav>
@@ -15,14 +25,14 @@ const Navbar = () => {
                 </div>
                 <ul className={isOpen ? " nav--list nav--list--open flex" : "nav--list flex"}>
                     <div className='flex center'>
-                        <li className="nav--item"><a href="/" className="nav--link">Home</a></li>
-                        <li className="nav--item"><a href="/" className="nav--link">Features</a></li>
-                        <li className="nav--item"><a href="/" className="nav--link">Plans & Pricing</a></li>
-                        <li className="nav--item"><a href="/" className="nav--link">Gallery</a></li>
-                        <li className="nav--item"><a href="/" className="nav--link">Location</a></li>
+                        <li className="nav--item"><Link to="#home-id" className="nav--link" smooth>Home</Link></li>
+                        <li className="nav--item"><Link to="#features-id" className="nav--link" smooth>Features</Link></li>
+                        <li className="nav--item"><Link to="#pricing-id" className="nav--link" smooth>Plans & Pricing</Link></li>
+                        <li className="nav--item"><Link to="#gallery-id" className="nav--link" smooth>Gallery</ Link></li>
+                        <li className="nav--item"><Link to="#location-id" className="nav--link" smooth>Location</Link></li>
                     </div>
                     <div className='flex ml-a'>
-                        <li className="nav--item active"><a href="/" className="nav--link">Contact</a></li>
+                        <li className="nav--item active"><Link to="#contact-id" className="nav--link" smooth>Contact</Link></li>
                     </div>
                 </ul>
             </div>

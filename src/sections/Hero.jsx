@@ -3,7 +3,7 @@ import Button from '../components//Button'
 
 const Hero = () => {
   return (
-    <section className='hero'>
+    <section className='hero' id='home-id'>
         <div className="container flex flex--justify">
             <div className="hero--img-container">
                 <div className="hero--img">

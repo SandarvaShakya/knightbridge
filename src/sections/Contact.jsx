@@ -1,8 +1,17 @@
-import React from 'react'
+import Heading from '../components/Heading'
+import '../styles/contact.css'
 
 const Contact = () => {
   return (
-    <div>Contact</div>
+    <section className='contact' id='contact-id'>
+      <div className="container">
+        <Heading 
+          title="Contact"
+          icon='phone.svg'
+          alt="phone"
+        />
+      </div>
+    </section>
   )
 }
 

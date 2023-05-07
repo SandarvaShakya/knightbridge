@@ -21,7 +21,7 @@ const Pricing = () => {
   }
 
   return (
-    <section className='pricing'>
+    <section className='pricing' id='pricing-id'>
       <div className="container">
         <Heading 
           title="See all available floor plans"
