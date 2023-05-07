@@ -8,6 +8,7 @@ import Information from './sections/Information';
 import Navbar from './sections/Navbar';
 import Pricing from './sections/Pricing';
 import Location from './sections/Location';
+import Footer from './sections/Footer';
 
 const App = () => {
   return (
@@ -22,6 +23,7 @@ const App = () => {
           <Location />
           <Contact />
         </div>
+        <Footer />
       </div>
     </BrowserRouter>
   );
