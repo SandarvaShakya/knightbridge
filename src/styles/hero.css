@@ -67,6 +67,7 @@
 
     .hero--img-container{
         width: 40%;
+        order: 2;
     }
     
     .hero--content{

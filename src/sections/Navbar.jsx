@@ -4,16 +4,7 @@ import { HashLink as Link} from 'react-router-hash-link';
 
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false)
-
-    const handleClickScroll = (event, elementId) => {
-        // event.preventDefault();
-        const element = document.getElementById(elementId);
-        if (element) {
-          // 👇 Will scroll smoothly to the top of the next section
-          element.scrollIntoView({ behavior: 'smooth' });
-        }
-      };
-
+    
     return (
         <nav>
             <div className="container flex">

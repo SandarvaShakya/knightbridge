@@ -5,7 +5,7 @@
 .information-card{
     padding: 1rem;
     border-radius: 8px;
-    box-shadow: 5px 5px 25px var(--secondary);
+    box-shadow: 5px 5px 5px var(--gray);
     border-left: 5px solid var(--primary);
 }
 
