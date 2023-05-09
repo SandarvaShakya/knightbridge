@@ -13,19 +13,16 @@
 
 .hero--img video{
     max-width: 100%;
-    border-radius: 8px;
+    display: block;
 }
 
-.hero--img-ext{
-    margin-top: 0.55rem;
+.hero--container{
+    display: flex;
+    flex-direction: column;
 }
 
-.ext-img{
-    width: 32%;
-}
-
-.ext-img img{
-    border-radius: 8px;
+.hero--content{
+    order: 2;
 }
 
 .hero--title{
@@ -57,6 +54,84 @@
     font-weight: 700;
 }
 
+.sub-content--container{
+    margin-top: 2rem;
+}
+
+.sub-images{
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.sub-img--container{
+    position: relative;
+}
+
+.sub-img--container + .sub-img--container{
+    margin-top: 1rem;
+}
+
+.sub-img img{
+    display: block;
+    border-radius: 16px;
+}
+
+.s-icon{
+    width: 50px;
+    margin-bottom: 1.2rem;
+}
+
+.s-icon img{
+    width: 100%;
+}
+
+.sub-content{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.sub-text{
+    text-align: left;
+    width: 30%;
+    padding: 1rem;
+    border-right: 1px solid var(--primary);
+}
+
+.s-number{
+    margin-bottom: 0.5rem;
+    font-size: 2rem;
+}
+
+.s-text{
+    font-size: 1.3rem;
+    font-weight: 300;
+}
+
+.box{
+    border-radius: 8px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 55%;
+    padding: 0.5rem 1rem;
+    box-shadow: 5px 5px 15px var(--secondary);
+    position: absolute;
+    background-color: white;
+    border-left: 5px solid var(--primary);
+}
+
+.box-1{
+    top: 10px;
+    left: 10px;
+}
+
+.box-2{
+    right: 10px;
+    bottom: 10px;
+}
+
 @media (min-width: 700px){
     .hero--title{
         font-size: 4rem;
@@ -65,8 +140,16 @@
         letter-spacing: 0;
     }
 
+    .hero--container{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+    }
+
     .hero--img-container{
-        width: 40%;
+        width: 50%;
         order: 2;
     }
     
@@ -79,6 +162,30 @@
     }
 
     .flex--justify{
+        justify-content: space-between;
+    }
+
+    .sub-content--container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .sub-content{
+        width: 40%; 
+    }
+
+    .sub-img--container{
+        width: 48%;
+    }
+
+    .sub-img--container + .sub-img--container{
+        margin-top: 0rem;
+    }
+
+    .sub-images{
+        width: 55%;
+        display: flex;
         justify-content: space-between;
     }
 

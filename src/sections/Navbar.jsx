@@ -16,14 +16,14 @@ const Navbar = () => {
                 </div>
                 <ul className={isOpen ? " nav--list nav--list--open flex" : "nav--list flex"}>
                     <div className='flex center'>
-                        <li className="nav--item"><Link to="#home-id" className="nav--link" smooth>Home</Link></li>
-                        <li className="nav--item"><Link to="#features-id" className="nav--link" smooth>Features</Link></li>
-                        <li className="nav--item"><Link to="#pricing-id" className="nav--link" smooth>Plans & Pricing</Link></li>
-                        <li className="nav--item"><Link to="#gallery-id" className="nav--link" smooth>Gallery</ Link></li>
-                        <li className="nav--item"><Link to="#location-id" className="nav--link" smooth>Location</Link></li>
+                        <Link to="#home-id" className="nav--link" smooth><li className="nav--item">Home</li></Link>
+                        <Link to="#features-id" className="nav--link" smooth><li className="nav--item">Features</li></Link>
+                        <Link to="#pricing-id" className="nav--link" smooth><li className="nav--item">Plans & Pricing</li></Link>
+                        <Link to="#gallery-id" className="nav--link" smooth><li className="nav--item">Gallery</li></ Link>
+                        <Link to="#location-id" className="nav--link" smooth><li className="nav--item">Location</li></Link>
                     </div>
                     <div className='flex ml-a'>
-                        <li className="nav--item active"><Link to="#contact-id" className="nav--link" smooth>Contact</Link></li>
+                        <Link to="#contact-id" className="nav--link" smooth><li className="nav--item active">Contact</li></Link>
                     </div>
                 </ul>
             </div>
