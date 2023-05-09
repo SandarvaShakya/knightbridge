@@ -16,7 +16,7 @@ img{
     max-width: 100%;
 }
 
-section{
+section, footer{
     padding: 3rem 0;
 }
 
